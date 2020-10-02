@@ -1,0 +1,37 @@
+/* Styles for PostAPI */
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+
+header {
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+ul {
+	list-style: none;
+}
+
+li .comment {
+	text-decoration-style: none;
+}
+
+.comment-view {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: 4px 4px 14px 0px #afafaf;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}

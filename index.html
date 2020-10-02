@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PostAPI</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="https://server1567.github.io/res/favicon.ico">
+	<!-- 
+
+	--- Requisitos obligatorio
+		-- Consumir REST API https://jsonplaceholder.typicode.com/
+		-- Listar los post;
+		-- Poder seleccionar un post
+		-- Mostrar comentario del post seleccionado.
+
+	--- Requisitos opcionales
+		-- Utilizar VUE
+		-- Utilizar Axios en vez de fetch
+		-- Utilizar Bootstrap 4
+
+	 -->
+</head>
+<body>
+
+<header><h2>Posting using REST API</h2></header>
+<br><br>
+<main>
+	<div class="container">
+		<p>
+			En esta prueba consumiremos la REST API <em>{JSON} Placeholder</em> para poder listar posts de un array de datos determinado como también seleccionar dicho dato y mostrarlo como comentario.
+		</p>
+		<div class="jumbotron">
+			<ul>
+				<li class="comment">
+					<!-- POST -->
+					<div class="comment-view">
+						<h4 class="post-title"></h4><br>
+						<h5 class="body-post"></h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<span>A proyect by <strong style="color: green;">Server1567</strong></span>
+</footer>
+
+<!-- Script -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
