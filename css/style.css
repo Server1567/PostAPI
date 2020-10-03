@@ -44,6 +44,31 @@ li .post {
 	color: #393a3c;
 }
 
+.commentsBox {
+	width: 100%;
+	padding: 15px;
+	background-color: #e3f1ff;
+	border-radius: 7px;
+}
+
+.comment {
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 7px;
+	border: 1px solid #fff;
+	box-shadow: 1px 1px 3px 0px #b4bdc7;
+	margin-bottom: 15px; 
+}
+
+.comment:last-child {
+	margin: 0px;
+}
+
+.switch {
+	display: none !important;
+}
+
 footer {
 	text-align: center;
 }
@@ -54,5 +79,14 @@ footer {
 }
 
 .author:hover {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
 	text-decoration: none;
 }
