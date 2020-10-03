@@ -47,3 +47,12 @@ li .post {
 footer {
 	text-align: center;
 }
+
+.author {
+	color: #007bff;
+	padding-bottom: 25px;
+}
+
+.author:hover {
+	text-decoration: none;
+}
