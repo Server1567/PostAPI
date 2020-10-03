@@ -1,14 +1,27 @@
 // Consumiendo REST API
+// *********************
+// Listar Posts
+// Obtener atributo identicador de x post
+// Listar comentarios a del post seleccionado a partir del atributo identificador
 
 $(document).ready(function(){
-	fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json()).then(function(json) {
-		var data = json;
-		var title = data[0]['title'];
-		var post = data[0]['body'];
-		$(".post-title").text(title);
-		$(".body-post").text(post);
-		console.log(post);
-	});
+
+ 	function posts() {
+
+		fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json()).then(function(json) {
+			var data = json;
+
+			for (var i = 0; i < data.length; i++) {
+				var title = data[i]['title'];
+				var post = data[i]['body'];
+
+				$("#posts").append("<li class='post'><div class='post-view'><h4 class='post-title'></h4><br><h6 class='body-post'></h6><span class='comment-btn'>Comments<svg width='1em' height='em' viewBox='0 0 16 16' class='bi bi-caret-down-fill' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg></span></div></li>");
+
+				$(".post-title").last().text(title);
+				$(".body-post").last().text(post);
+			}
+		});
+ 	}
+ 	posts();
+
 });
-
-

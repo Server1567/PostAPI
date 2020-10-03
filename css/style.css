@@ -18,18 +18,30 @@ ul {
 	list-style: none;
 }
 
-li .comment {
+li .post {
 	text-decoration-style: none;
 }
 
-.comment-view {
+.post-view {
 	height: 100%;
 	width: 100%;
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 15px;
 	box-shadow: 4px 4px 14px 0px #afafaf;
+	margin-bottom: 25px;
+}
+
+.comment-btn {
+	color: #6c757d;
+	font-weight: bold;
+	text-align: right;
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+
+.comment-btn:hover {
+	color: #393a3c;
 }
 
 footer {

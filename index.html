@@ -8,11 +8,13 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="shortcut icon" href="https://server1567.github.io/res/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 	<!-- 
 
 	--- Requisitos obligatorio
 		-- Consumir REST API https://jsonplaceholder.typicode.com/
-		-- Listar los post;
+		-- Listar los post
 		-- Poder seleccionar un post
 		-- Mostrar comentario del post seleccionado.
 
@@ -30,18 +32,26 @@
 <main>
 	<div class="container">
 		<p>
-			En esta prueba consumiremos la REST API <em>{JSON} Placeholder</em> para poder listar posts de un array de datos determinado como también seleccionar dicho dato y mostrarlo como comentario.
+			En esta prueba consumiremos la REST API <em><strong>{JSON} Placeholder</strong></em> para poder listar posts de un array de datos determinado como también seleccionar dicho dato y mostrarlo como comentario.
 		</p>
 		<div class="jumbotron">
-			<ul>
-				<li class="comment">
-					<!-- POST -->
-					<div class="comment-view">
-						<h4 class="post-title"></h4><br>
-						<h5 class="body-post"></h5>
-					</div>
-				</li>
+			<ul style="padding: 0;" id="posts">
+				<!-- POSTS -->
 			</ul>
+			<!-- Pagination -->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </main>
