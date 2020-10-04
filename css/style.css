@@ -14,9 +14,7 @@ header {
 	margin-left: 100px;
 }
 
-ul {
-	list-style: none;
-}
+ul { list-style: none; }
 
 /* ESTILOS DEL LOADER DE CARGA DE POSTS DE https://loading.io/css/ */
 .lds-facebook {

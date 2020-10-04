@@ -19,6 +19,7 @@ $(document).ready(function(){
 				var idPost = dataForPage[i]['id'];
 
 				$("#posts").append("<li class='post'><div class='post-view'><h4 class='post-title'></h4><br><h6 class='body-post'></h6><span class='comment-btn' id='"+idPost+"'>Comments<svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-caret-down-fill' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg></span><div class='commentsBox switch'></div></div></li>");
+
 				$(".post-title").last().text(title);
 				$(".body-post").last().text(post);
 				$("#posts").attr("class", id);
@@ -37,7 +38,6 @@ $(document).ready(function(){
 					$(this).next().empty();
 					$(this).html("Comments<svg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-caret-down-fill' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
 				}
-				// Aquí haremos la animación de entrada de los comentarios
 			});
 		});
 
@@ -45,7 +45,6 @@ $(document).ready(function(){
  	posts(0, 10); // Ejecutamos los primeros Posts
 
  	function comments(post) {
-
  		var link = "https://jsonplaceholder.typicode.com/posts/"+post+"/comments";
 
  		$.getJSON(link, function(dataProcessed) {
